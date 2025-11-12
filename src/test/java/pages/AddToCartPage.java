@@ -16,4 +16,16 @@ public class AddToCartPage extends ReusableMethods {
 
     @FindBy(xpath = "//button[@class='Payment-Button CC']")
     public WebElement payWithCartOpt;
+
+    @FindBy(xpath = "//button[@class='Apply-Button Show-Promo-Code-Button']")
+    public WebElement addPromoCodeBtn;
+
+    @FindBy(xpath = "//input[@class='Promo-Code-Value']")
+    public WebElement promoCodeInput;
+
+    @FindBy(xpath = "//button[@class='Promo-Apply']")
+    public WebElement promoCodeApplyBtn;
+
+    @FindBy(xpath = "//div[@id='SnackBar']/span")
+    public WebElement invalidPromoCodeError;
 }
