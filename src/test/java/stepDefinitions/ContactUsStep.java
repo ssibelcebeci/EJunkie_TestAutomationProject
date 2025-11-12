@@ -48,12 +48,8 @@ public class ContactUsStep extends ReusableMethods {
     }
     @Then("Click on the Alert Button")
     public void click_on_the_alert_button() {
-        try {
-            Alert alert = driver.switchTo().alert();
-            System.out.println("Alert bulundu: " + alert.getText());
-            alert.accept();
-        } catch (NoAlertPresentException e) {
-            System.out.println("Alert görünmedi, işlem başarısız.");
-        }
+        threadWait(2);
+        Alert alert = driver.switchTo().alert();
+        alert.accept();
     }
 }
