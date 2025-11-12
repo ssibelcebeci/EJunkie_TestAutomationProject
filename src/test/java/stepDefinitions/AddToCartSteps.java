@@ -42,19 +42,21 @@ public class AddToCartSteps extends ReusableMethods {
 
     @When("Click on the add promo code button")
     public void click_on_the_add_promo_code_button() {
-
+        myClick(atcp.addPromoCodeBtn);
     }
 
     @When("Enter an invalid \\(random) promo code into the specified field.")
     public void enterAnInvalidRandomPromoCodeIntoTheSpecifiedField() {
+        mySendKeys(atcp.promoCodeInput, ConfigReader.getProperty("invalidPromoCode"));
     }
 
     @When("Click on the Apply button.")
     public void click_on_the_apply_button() {
-
+        myClick(atcp.promoCodeApplyBtn);
     }
 
     @Then("Verify that the invalid promo code warning message is displayed.")
     public void verifyThatTheInvalidPromoCodeWarningMessageIsDisplayed() {
+        verifyContainsText(atcp.invalidPromoCodeError, "Invalid");
     }
 }
