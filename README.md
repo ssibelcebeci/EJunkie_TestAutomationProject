@@ -1,71 +1,38 @@
-# **E-JUNKIE DEMO STORE — QA CASE STUDY**
-*A structured breakdown of a product experience.*
+███████╗ ██╗ ██╗ ██╗ ██╗ ██╗ ██╔════╝ ██║ ██║ ██║ ██║ ██╔╝ █████╗ ████████╗ ██║ ██║ █████╔╝ ██╔══╝ ╚════██╔╝ ██║ ██║ ██╔═██╗ ███████╗ ██║ ╚██████╔╝ ██║ ██╗ ╚══════╝ ╚═╝ ╚═════╝ ╚═╝ ╚═╝
+
+    E-JUNKIE // QA TEST SPRINT // 2025
+
+
+**TARGET SYSTEMS:**  
+> https://shopdemo.e-junkie.com  
+> https://shopdemo.fatfreeshop.com  
+
+**MISSION:**  
+Validate the digital-goods pipeline, payment gateway, messaging core, navigation layer, and media modal.
 
 ---
 
-## **01 — Context**
-This sprint analyzes the core interactions of a digital-goods
-e-commerce product. Each flow mirrors a real-customer journey.
+### ► USER STORY GRID (US 301 → 308)
+[301] PRODUCT ADDING [305] DOWNLOAD DELIVERY [302] CARD FAIL CASE [306] CONTACT MESSAGE [303] PAYMENT ERROR MAP [307] NAVIGATION RETURN [304] SUCCESSFUL PAYMENT [308] VIDEO MODULE
 
 ---
 
-## **02 — Objectives**
-- Validate the reliability of purchase & payment  
-- Evaluate negative-card behavior  
-- Confirm digital-file delivery  
-- Assess the messaging system  
-- Test navigation across two mirrored environments  
-- Explore the homepage's media entry point  
+### ► TOOLCHAIN
+JAVA 22 | SELENIUM 4 | CUCUMBER BDD TESTNG | MAVEN | DATAFAKER POM DESIGN ARCHITECTURE
 
 ---
 
-## **03 — Experience Map**
-**Discover → Select → Pay → Receive → Communicate → Navigate**
-
-Mapped to the following US set:
-301 / 302 / 303 / 304 / 305 / 306 / 307 / 308
-
-Each story represents a touchpoint in the journey.
+### ► FINDINGS
+⚡ Payment path unstable under negative input  
+⚡ Alert timing not symmetrical across environments  
+⚡ Video modal requires event overrides  
+⚡ System stable under positive scenarios  
 
 ---
 
-## **04 — Methods**
-- Functional Testing  
-- Negative Testing  
-- UI Validation  
-- Modal Interaction Testing  
-- Cross-Environment Comparison  
-- Automation via POM + Cucumber  
+### ► OPERATORS
+SİBEL CEBECİ İBRAHİM HUSEYNLI RAMAZAN DOĞAN GÜRHAN ATAŞ
 
 ---
 
-## **05 — Tools Used**
-Java 22 • Selenium 4.38 • Cucumber BDD  
-TestNG • Maven • DataFaker  
-ChromeDriver 142  
-
----
-
-## **06 — Key Observations**
-- Error states on payment flow are highly dynamic  
-- Modal video requires manual timing or scripting  
-- Message alerts behave inconsistently  
-- Primary and alternative environment differ in load flow  
-
----
-
-## **07 — Contributors**
-• **Sibel Cebeci**  
-• **İbrahim Hüseynli**  
-• **Ramazan Doğan**  
-• **Gürhan Ataş**
-
----
-
-## **08 — Conclusion**
-This sprint establishes a baseline quality model for the E-Junkie experience.  
-Future expansions can include performance, API, and multi-device testing.
-
----
-
-📁 *This document is part of a larger QA portfolio and presented in a case-study format.*
+### END OF TRANSMISSION
