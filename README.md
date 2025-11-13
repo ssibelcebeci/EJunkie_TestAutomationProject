@@ -23,14 +23,14 @@ e-commerce product. Each flow mirrors a real-customer journey.
 **Discover → Select → Pay → Receive → Communicate → Navigate**
 
 Mapped to the following US set:
-301 /
- 302 /
-  303 /
-   304 /
-    305 /
-   306 /
-  307 /
-308 /
+US 301  — Product Adding
+US 302  — Card Fail Case
+US 303  — Payment Error Map
+US 304  — Successful Payment
+US 305  — Digital File Delivery
+US 306  — Contact Message
+US 307  — Navigation Return
+US 308  — Video Module
 
 Each story represents a touchpoint in the journey.
 
@@ -46,12 +46,13 @@ Each story represents a touchpoint in the journey.
 
 ---
 
-## **05 — Tools Used**
-• Java 22 
-• Selenium 4.38 
-• Cucumber BDD  
-• TestNG 
-• Maven 
+LANGUAGE & FRAMEWORKS
+────────────────────────
+Java 22
+Selenium 4.38
+Cucumber BDD
+TestNG
+Maven
 
 ---
 
