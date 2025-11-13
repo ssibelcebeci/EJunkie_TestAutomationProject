@@ -48,7 +48,7 @@ public class ContactUsStep extends ReusableMethods {
     }
     @Then("Click on the Alert Button")
     public void click_on_the_alert_button() {
-        threadWait(2);
+        threadWait(5);
         Alert alert = driver.switchTo().alert();
         alert.accept();
     }

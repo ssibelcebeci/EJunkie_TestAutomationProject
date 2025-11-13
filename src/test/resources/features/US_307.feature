@@ -1,7 +1,7 @@
 Feature: Home feature
 
   Scenario:Homepage visible.
-When Click seeHowItWorks button
-    Then YouTube Window opens
+    Given Navigate to the main webpage
+    When Click seeHowItWorks button
     And Click play button
     Then Close the window after ten sec

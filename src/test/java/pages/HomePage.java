@@ -12,14 +12,11 @@ public class HomePage extends ReusableMethods {
     public HomePage() {
         PageFactory.initElements(BaseDriver.driver, this);
     }
-    @FindBy(linkText = "wiki/user/themes/Wiki/images/logo.svg?12")
-    public WebElement eJunkieLinkText;
+    @FindBy(xpath = "//div[@class='column is-2-desktop is-4-tablet is-4-mobile']/a/img")
+    public WebElement eJunkieLogo;
 
-    @FindBy(linkText = "//a[@onclick='toggleYoutubeModal(true)']")
+    @FindBy(xpath = "//a[@onclick='toggleYoutubeModal(true)']")
     public WebElement seeHowItWorksBtn;
-
-    @FindBy(linkText = "https://www.youtube.com/embed/kODFTdj9Ifc")
-    public WebElement iFrameYouTube;
 
     @FindBy(xpath= "//button[@class='modal-close is-large']")
     public WebElement windowCloseBtn;
