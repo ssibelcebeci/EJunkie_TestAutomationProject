@@ -1,35 +1,38 @@
-================ QA TEST SPRINT: E-JUNKIE (2025) ================
+★ E-JUNKIE | QA AUTOMATION SPRINT | 2025 ★
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-> TARGET ENVIRONMENTS:
-  - shopdemo.e-junkie.com
-  - shopdemo.fatfreeshop.com
+TARGET DOMAINS
+→ https://shopdemo.e-junkie.com
+→ https://shopdemo.fatfreeshop.com
 
-> OBJECTIVE:
-  Validate product flow → payment → messaging → navigation → media modal.
+MISSION OBJECTIVE
+Ensure the seamless operation of checkout, messaging, navigation and
+media components within the E-Junkie digital goods ecosystem.
 
-> USER STORIES (301-308):
-  [301] Add Product
-  [302] Card Failure
-  [303] Payment Error Map
-  [304] Successful Payment
-  [305] Download Delivery
-  [306] Contact Message
-  [307] Return to Homepage
-  [308] Info Video Access
+USER STORY DECK (US 301–308)
+301 ▸ Product Add
+302 ▸ Failed Card Attempt
+303 ▸ Payment Error Mapping
+304 ▸ Successful Card Payment
+305 ▸ E-book Download Delivery
+306 ▸ Contact Form Message Flow
+307 ▸ Navigation Back to Home
+308 ▸ Video Info Module
 
-> TECH STACK:
-  Java 22 | Selenium | Cucumber | TestNG | Maven | DataFaker | POM
+STACK & TOOLS
+Java 22 ✦ Selenium 4 ✦ Cucumber ✦ TestNG ✦ Maven ✦ DataFaker  
+Architecture: Page Object Model
 
-> OBSERVATIONS:
-  * Error messages inconsistent between envs
-  * Alerts not synchronized
-  * Video modal needs JS trigger
-  * Positive paths smooth & stable
+SYSTEM NOTES
+⚡ Negative payment errors vary by environment  
+⚡ Alert sequence timing not consistent  
+⚡ Video modal requires JS override to close  
+⚡ Fully stable under positive payment path  
 
-> TEAM:
-  - Sibel Cebeci
-  - Ibrahim Huseynli
-  - Ramazan Doğan
-  - Gürhan Ataş
+TEAM
+✦ Sibel Cebeci  
+✦ Ibrahim Huseynli  
+✦ Ramazan Doğan  
+✦ Gürhan Ataş  
 
-====================== END OF FILE ======================
+⚡ READY FOR DEPLOYMENT ⚡
