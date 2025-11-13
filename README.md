@@ -54,10 +54,6 @@ Cucumber BDD
 TestNG  
 Maven  
 
-### **Browser & Driver**
-Chrome 142  
-ChromeDriver 142  
-
 ---
 
 ## **Key Observations**
@@ -70,3 +66,17 @@ Primary and alternative environment differ in load flow
 
 ## **Crew**
 Sibel Cebeci  
+İbrahim Huseynli
+Ramazan Doğan
+Gürhan Ataş 
+---
+
+## **Conclusion**
+This sprint establishes a baseline quality model for the E-Junkie experience.  
+Future expansions can include performance, API, and multi-device testing.
+
+---
+
+📁 *This document is part of a larger QA portfolio and presented in a case-study format.*
+
+</div>
