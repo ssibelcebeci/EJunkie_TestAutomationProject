@@ -3,13 +3,13 @@
 
 ---
 
-## **01 — Context**
-This sprint analyzes the core interactions of a digital-goods
+## **Context**
+This sprint analyzes the core interactions of a digital-goods  
 e-commerce product. Each flow mirrors a real-customer journey.
 
 ---
 
-## **02 — Objectives**
+## **Objectives**
 - Validate the reliability of purchase & payment  
 - Evaluate negative-card behavior  
 - Confirm digital-file delivery  
@@ -19,24 +19,22 @@ e-commerce product. Each flow mirrors a real-customer journey.
 
 ---
 
-## **03 — Experience Map**
-**Discover → Select → Pay → Receive → Communicate → Navigate**
 
-Mapped to the following US set:
-US 301  — Product Adding
-US 302  — Card Fail Case
-US 303  — Payment Error Map
-US 304  — Successful Payment
-US 305  — Digital File Delivery
-US 306  — Contact Message
-US 307  — Navigation Return
-US 308  — Video Module
+### **Mapped User Stories**
+US 301  
+US 302  
+US 303  
+US 304  
+US 305  
+US 306  
+US 307  
+US 308  
 
 Each story represents a touchpoint in the journey.
 
 ---
 
-## **04 — Methods**
+## **Methods**
 - Functional Testing  
 - Negative Testing  
 - UI Validation  
@@ -46,17 +44,22 @@ Each story represents a touchpoint in the journey.
 
 ---
 
-LANGUAGE & FRAMEWORKS
-────────────────────────
-Java 22
-Selenium 4.38
-Cucumber BDD
-TestNG
-Maven
+## **Tools Used**
+
+### **Core Stack**
+- Java 22  
+- Selenium 4.38  
+- Cucumber BDD  
+- TestNG  
+- Maven  
+
+### **Browser & Driver**
+- Chrome 142  
+- ChromeDriver 142  
 
 ---
 
-## **06 — Key Observations**
+## **Key Observations**
 - Error states on payment flow are highly dynamic  
 - Modal video requires manual timing or scripting  
 - Message alerts behave inconsistently  
@@ -64,16 +67,15 @@ Maven
 
 ---
 
-## **07 — Crew**
-Sibel Cebeci 
-Ibrahim Huseynli 
-Ramazan Doğan 
-Gürhan Ataş
-
+## **Crew**
+- Sibel Cebeci  
+- Ibrahim Huseynli  
+- Ramazan Doğan  
+- Gürhan Ataş  
 
 ---
 
-## **08 — Conclusion**
+## **Conclusion**
 This sprint establishes a baseline quality model for the E-Junkie experience.  
 Future expansions can include performance, API, and multi-device testing.
 
