@@ -1,88 +1,122 @@
 <div align="center">
 
-# **E-JUNKIE DEMO STORE — QA CASE STUDY**  
-*A structured breakdown of a product experience.*
+# **ORDER PIZZA — UI TEST AUTOMATION FRAMEWORK**
+
+*A clean & structured end-to-end test architecture.*
 
 ---
 
 ## **Context**
-This sprint analyzes the core interactions of a digital-goods  
-e-commerce product. Each flow mirrors a real-customer journey.
+
+This project validates the core user journeys of an online pizza
+ordering application using **BDD-driven UI automation**.
+
+Each scenario reflects a **real customer interaction**,
+from product selection to cart validation.
 
 ---
 
 ## **Objectives**
-Validate the reliability of purchase & payment  
-Evaluate negative-card behavior  
-Confirm digital-file delivery  
-Assess the messaging system  
-Test navigation across two mirrored environments  
-Explore the homepage's media entry point  
+
+Validate add-to-cart flow
+Verify quantity management
+Test custom pizza configuration
+Ensure cart behavior consistency
+Generate readable test reports
 
 ---
 
-## **Mapped User Stories**
-US 301  
-US 302  
-US 303  
-US 304  
-US 305  
-US 306  
-US 307  
-US 308  
+## **Test Scenarios Covered**
 
-Each story represents a touchpoint in the journey.
+Add pizza to cart
+Increase product quantity
+Remove product from cart
+Verify empty cart message
+Create your own pizza with random toppings
+Verify cart quantity
 
 ---
 
-## **Methods**
-Functional Testing  
-Negative Testing  
-UI Validation  
-Modal Interaction Testing  
-Cross-Environment Comparison  
-Automation via POM + Cucumber  
+## **Framework Design**
+
+Page Object Model (POM)
+Cucumber BDD (Gherkin)
+Reusable utility methods
+Centralized driver & config management
+Hooks for lifecycle control
 
 ---
 
-## **Tools Used**
+## **Tech Stack**
 
-### **Core Stack**
-Java 22  
-Selenium 4.38  
-Cucumber BDD  
-TestNG  
-Maven  
+### **Core**
 
-### **Browser & Driver**
-Chrome 142  
-ChromeDriver 142  
+Java 17
+Selenium WebDriver
+Cucumber BDD
+TestNG
+Maven
 
----
+### **Reporting**
 
-## **Key Observations**
-Error states on payment flow are highly dynamic  
-Modal video requires manual timing or scripting  
-Message alerts behave inconsistently  
-Primary and alternative environment differ in load flow  
+Allure Report
 
 ---
 
-## **Crew**
-Sibel Cebeci  
-Ibrahim Huseynli  
-Ramazan Doğan  
-Gürhan Ataş  
+## **Project Structure**
+
+```
+hooks          → scenario lifecycle management  
+pages          → UI elements & page actions  
+stepDefinitions→ Gherkin step implementations  
+utilities      → driver, config & reusable helpers  
+features       → business-readable test scenarios  
+```
 
 ---
 
-## **Conclusion**
-This sprint establishes a baseline quality model for the E-Junkie experience.  
-Future expansions can include performance, API, and multi-device testing.
+## **Execution**
+
+Run all tests:
+
+```
+mvn clean test
+```
 
 ---
 
-📁 *This document is part of a larger QA portfolio and presented in a case-study format.*
+## **Reporting**
+
+Generate report:
+
+```
+allure generate target/allure-results --clean -o target/allure-report
+```
+
+Open report:
+
+```
+allure open target/allure-report
+```
+
+Quick serve:
+
+```
+allure serve target/allure-results
+```
+
+---
+
+## **Key Takeaways**
+
+Readable & maintainable test design
+Strong separation of concerns
+Realistic user-focused scenarios
+Clean and visual reporting
+
+
+📁 *This framework is part of a growing QA portfolio and is designed
+to demonstrate real-world automation practices.*
 
 ![done](https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExcTZjNzZ6N2ZrcTIyN2NrdmR6end5c3o3cW9lbW9nYXV1bnRsZ2RxNiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/DaEjBX6gkJyR9nFtL7/giphy.gif)
 
